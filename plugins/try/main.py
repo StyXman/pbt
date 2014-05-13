@@ -42,7 +42,6 @@ with "pbt install {}"'''.format(lib_to_try)
 
 
 def pbt_try_install(lib_to_try, path):
-    """ Install a lib in a custom path using pip"""
+    """ Install a lib in a custom path using the install plugin"""
     sys.path.insert(0, path)
-    pip_args = ['install', "-t", path, lib_to_try]
-    pip.main(initial_args=pip_args)
+    pbt.run ('install', ("-t", path, lib_to_try))
