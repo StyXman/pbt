@@ -1,22 +1,22 @@
 pbt
 ===
 
-.. image:: https://travis-ci.org/pebete/pbt.svg?branch=master 
+.. image:: https://travis-ci.org/pebete/pbt.svg?branch=master
 
 Python build tool
 
-what?
+What?
 -----
 
-this tool plans to bring all the development tools from python into a single,
+This tool plans to bring all the development tools for Python into a single,
 comprehensive and coherent set of commands that will provide a default setup
 and workflow to make it easy to start, build, test, package and publish a
-python project.
+Python project.
 
-all commands will be plugins, you can add and/or implement yours to suit your
+All commands will be plugins, you can add and/or implement yours to suit your
 needs.
 
-pbt will provide the default setup and workflow with sensible defaults, but the
+`pbt` will provide the default setup and workflow with sensible defaults, but the
 idea is that you can tweak every aspect if you need it.
 
 
@@ -29,40 +29,40 @@ To install pbt run the following commands::
     $ cd pbt
     $ python3 setup.py install          # add sudo or --prefix at will
 
-and that's all now you can start using pbt. 
+and that's all now you can start using pbt.
 
 Basic usage
 -----------
 
-you can check the power of pbt with this commands ::
-    
-    # makes a flask project from a template 
-    $ pbt new flask                    
-    
+You can check the power of pbt with this commands ::
+
+    # makes a flask project from a template
+    $ pbt new flask
+
     # install deps listed on project.pbt
     $ cd myflaskapp
     $ pbt install
 
     # runs the flask app from the entry point in project.pbt
-    $ pbt run                           
-    
-    # checks the code with flake8
-    $ pbt check                         
-    
-    # run the tests 
-    $ pbt test                        
-    
-    # makes the setup.py file from project.pbt  
-    $ pbt setup                        
+    $ pbt run
 
-testing
+    # checks the code with flake8
+    $ pbt check
+
+    # run the tests
+    $ pbt test
+
+    # makes the setup.py file from project.pbt
+    $ pbt setup
+
+Testing
 -------
 
-to run pbt core tests run from pbt base folder::
+To run pbt core tests run from pbt base folder::
 
     $ ./pbt.sh test
 
-dependencies
+Dependencies
 ------------
 
 * yaml
@@ -70,7 +70,7 @@ dependencies
 * xdg
 * flake8
 
-resources
+Resources
 ---------
 
 * http://python-packaging-user-guide.readthedocs.org/en/latest/tutorial.html
@@ -85,7 +85,7 @@ resources
 * https://github.com/pypa
 * https://github.com/pypa/sampleproject/
 
-license
+License
 -------
 
-Apache
+Apache 2.0
